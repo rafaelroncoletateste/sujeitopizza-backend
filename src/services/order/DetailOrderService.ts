@@ -4,7 +4,7 @@ interface DetailRequest {
   order_id: string;
 }
 
-export class DeatilUserService {
+export class DetailUserService {
   async execute({ order_id }: DetailRequest) {
     const orders = await prismaClient.item.findMany({
       where: {
